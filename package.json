@@ -1,0 +1,22 @@
+{
+    "name": "advice-generator-app",
+    "version": "1.0.0",
+    "description": "Front End Mentor Challenge",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/liammcluckie/advice-generator-app.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/liammcluckie/advice-generator-app/issues"
+    },
+    "homepage": "https://github.com/liammcluckie/advice-generator-app#readme",
+    "devDependencies": {
+        "node-sass": "^7.0.1"
+    }
+}
