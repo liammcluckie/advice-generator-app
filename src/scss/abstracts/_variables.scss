@@ -1,5 +1,11 @@
-// Colours
+// Fonts
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap");
 
+$font: "Manrope", sans-serif;
+$quote-weight: 800;
+$advice-weight: 600;
+
+// Colours
 $primary--light: hsl(193, 38%, 86%);
 $primary--neon: hsl(150, 100%, 66%);
 

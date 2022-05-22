@@ -1,7 +1,45 @@
+// Quote
+.quote-container {
+    position: relative;
+    background-color: $secondary--grey-blue;
+    text-align: center;
+    padding: 2.75rem 1.25rem 3.75rem;
+    margin-inline: 1rem;
+    border-radius: 8px;
+}
+
+.advice-number {
+    font-weight: $advice-weight;
+    letter-spacing: 3px;
+    color: $primary--neon;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    margin-bottom: 1.75rem;
+}
+
+blockquote {
+    font-weight: 800;
+    font-size: clamp(1.5rem, 3.5vw, 1.75rem);
+    color: $primary--light;
+    margin-bottom: 1.75rem;
+}
+
+.dice {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: $primary--neon;
+    border-radius: 50%;
+    padding: 1.25rem;
+    width: fit-content;
+}
+
 // Footer
 .attribution {
     font-size: 11px;
     text-align: center;
+    color: $primary--light;
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
