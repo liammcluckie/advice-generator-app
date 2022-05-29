@@ -1,5 +1,8 @@
 // Quote
 .quote-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: relative;
     background-color: $secondary--grey-blue;
     text-align: center;
@@ -7,6 +10,7 @@
     margin-inline: 1rem;
     border-radius: 8px;
     width: min(90%, 500px);
+    min-height: 250px;
 }
 
 .advice-number {
@@ -16,6 +20,13 @@
     text-transform: uppercase;
     font-size: 0.75rem;
     margin-bottom: 1.75rem;
+    opacity: 1;
+    transition: $transition;
+}
+
+.advice-number.number-transition {
+    opacity: 0;
+    transform: translateY(10px);
 }
 
 blockquote {
@@ -23,18 +34,26 @@ blockquote {
     font-size: clamp(1.5rem, 3.5vw, 1.75rem);
     color: $primary--light;
     margin-bottom: 1.75rem;
+    opacity: 1;
+    transition: $transition;
+}
+
+blockquote.transition {
+    opacity: 0;
+    transform: translateX(-10px);
 }
 
 .divider {
     margin-inline: auto;
 }
 
-.dice {
+.advice-button {
     position: absolute;
     bottom: -30px;
     left: 50%;
     transform: translate(-50%);
     background-color: $primary--neon;
+    border: 0;
     border-radius: 50%;
     padding: 1.25rem;
     width: fit-content;
