@@ -12,3 +12,6 @@ $primary--neon: hsl(150, 100%, 66%);
 $secondary--blue: hsl(217, 19%, 38%);
 $secondary--grey-blue: hsl(217, 19%, 24%);
 $secondary--dark-blue: hsl(218, 23%, 16%);
+
+// Transition
+$transition: opacity 0.3s ease, transform 0.3s ease;
