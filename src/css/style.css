@@ -94,6 +94,7 @@ main {
   padding: 2.75rem 1.25rem 3.75rem;
   margin-inline: 1rem;
   border-radius: 8px;
+  width: min(90%, 500px);
 }
 
 .advice-number {
@@ -110,6 +111,10 @@ blockquote {
   font-size: clamp(1.5rem, 3.5vw, 1.75rem);
   color: hsl(193deg, 38%, 86%);
   margin-bottom: 1.75rem;
+}
+
+.divider {
+  margin-inline: auto;
 }
 
 .dice {
