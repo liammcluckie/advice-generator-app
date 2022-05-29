@@ -98,7 +98,6 @@ main {
   margin-inline: 1rem;
   border-radius: 8px;
   width: min(90%, 500px);
-  min-height: 250px;
 }
 
 .advice-number {
@@ -137,6 +136,7 @@ blockquote.transition {
 
 .advice-button {
   position: absolute;
+  cursor: pointer;
   bottom: -30px;
   left: 50%;
   transform: translate(-50%);
@@ -145,6 +145,10 @@ blockquote.transition {
   border-radius: 50%;
   padding: 1.25rem;
   width: fit-content;
+  transition: box-shadow 0.5s ease;
+}
+.advice-button:hover, .advice-button:focus {
+  box-shadow: 0 0 13px 0.5px hsl(150deg, 100%, 66%);
 }
 
 .attribution {
