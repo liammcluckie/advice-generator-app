@@ -155,6 +155,7 @@ blockquote.transition {
   font-size: 11px;
   text-align: center;
   color: hsl(193deg, 38%, 86%);
+  margin-bottom: 0.5rem;
 }
 
 .attribution a {
