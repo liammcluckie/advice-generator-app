@@ -22,6 +22,8 @@ function getAdviceData() {
         adviceQuote.classList.remove('transition');
         adviceQuote.innerHTML = `"${adviceObj.advice}"`;
         adviceNumber.classList.remove('number-transition');
+        // Remove focus from button after data is retrieved
+        adviceButton.blur();
         adviceNumber.innerHTML = 'Advice #' + randomAdviceNumber(1, 1000);
     }).catch(error => {
         console.log(error);
@@ -37,10 +39,11 @@ adviceButton.addEventListener('click', () => {
 
 });
 
+// Add transition when page loads whilst API data is being retrieved
 window.onload = () => {
     adviceQuote.classList.add('transition');
     adviceNumber.classList.add('number-transition');
     setTimeout(() => {
         getAdviceData();
-    }, 800)
+    }, 800);
 };
