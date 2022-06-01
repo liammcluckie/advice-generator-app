@@ -40,10 +40,8 @@ adviceButton.addEventListener('click', () => {
 });
 
 // Add transition when page loads whilst API data is being retrieved
-window.onload = () => {
+document.onreadystatechange = () => {
     adviceQuote.classList.add('transition');
     adviceNumber.classList.add('number-transition');
-    setTimeout(() => {
-        getAdviceData();
-    }, 800);
+    getAdviceData();
 };
